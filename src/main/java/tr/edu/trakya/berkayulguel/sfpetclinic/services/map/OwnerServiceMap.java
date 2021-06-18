@@ -1,10 +1,12 @@
 package tr.edu.trakya.berkayulguel.sfpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import tr.edu.trakya.berkayulguel.sfpetclinic.model.Owner;
 import tr.edu.trakya.berkayulguel.sfpetclinic.services.CrudService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements CrudService<Owner,Long> {
     @Override
     public Set<Owner> findAll() {

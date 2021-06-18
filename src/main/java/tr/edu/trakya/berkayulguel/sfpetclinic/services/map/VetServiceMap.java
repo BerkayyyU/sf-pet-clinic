@@ -1,10 +1,12 @@
 package tr.edu.trakya.berkayulguel.sfpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import tr.edu.trakya.berkayulguel.sfpetclinic.model.Vet;
 import tr.edu.trakya.berkayulguel.sfpetclinic.services.CrudService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet,Long> implements CrudService<Vet,Long> {
     @Override
     public Set<Vet> findAll() {
